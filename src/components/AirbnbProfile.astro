@@ -1,0 +1,122 @@
+---
+const { lang } = Astro.props;
+
+const translations = {
+  en: {
+    reviews: "reviews",
+    cohost: "Professional co-host since 2024",
+    responseTime: "Average response time: less than an hour",
+    responseRate: "Response rate: 100%",
+    viewProfile: "View Airbnb Profile",
+    over: "Over"
+  },
+  fr: {
+    reviews: "commentaires",
+    cohost: "Co-hôte professionnel depuis 2024",
+    responseTime: "Temps de réponse moyen : moins d'une heure",
+    responseRate: "Taux de réponse : 100%",
+    viewProfile: "Voir le profil Airbnb",
+    over: "Plus de"
+  },
+  zh: {
+    reviews: "則評價",
+    cohost: "專業合作房東自 2024 年起",
+    responseTime: "平均回覆時間：不到一小時",
+    responseRate: "回覆率：100%",
+    viewProfile: "查看 Airbnb 個人檔案",
+    over: "超過"
+  },
+  it: {
+    reviews: "recensioni",
+    cohost: "Co-host professionale dal 2024",
+    responseTime: "Tempo medio di risposta: meno di un'ora",
+    responseRate: "Tasso di risposta: 100%",
+    viewProfile: "Visualizza profilo Airbnb",
+    over: "Più di"
+  }
+};
+
+const t = translations[lang] || translations.fr;
+---
+
+<div class="bg-white p-6 rounded-lg shadow-md mb-12">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    <img 
+      src="/images/avatars/avatarMaxime.jpg" 
+      alt="Maxime" 
+      class="w-40 h-40 rounded-full object-cover"
+      loading="lazy"
+      width="160"
+      height="160"
+    />
+    <div class="w-full md:w-2/3">
+      <h2 class="text-2xl font-bold mb-4">Maxime </h2>
+      <div class="flex items-center mb-4">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-600" fill="currentColor">
+          <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z"/>
+        </svg>
+        <span class="ml-2 font-semibold">4.9</span>
+        <span class="mx-2">•</span>
+        <span>{t.over} 169 {t.reviews}</span>
+      </div>
+      <div class="space-y-2 text-gray-600">
+        <p>{t.cohost}</p>
+        <p>{t.responseTime}</p>
+        <p>{t.responseRate}</p>
+      </div>
+      <a 
+        href="https://www.airbnb.fr/co-hosts/profile/1149912176518365662?match_origin=seo&listing_id=1080511863039178549" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="inline-flex items-center mt-4 text-primary-600 hover:text-primary-700"
+      >
+        {t.viewProfile}
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-md mb-12">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    <img 
+      src="/images/avatars/avatarHanna.jpg" 
+      alt="Hanna" 
+      class="w-40 h-40 rounded-full object-cover"
+      loading="lazy"
+      width="160"
+      height="160"
+    />
+    <div class="w-full md:w-2/3">
+      <h2 class="text-2xl font-bold mb-4">Hanna </h2>
+      <div class="flex items-center mb-4">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-600" fill="currentColor">
+          <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z"/>
+        </svg>
+        <span class="ml-2 font-semibold">4.9</span>
+        <span class="mx-2">•</span>
+        <span>{t.over} 105 {t.reviews}</span>
+      </div>
+      <div class="space-y-2 text-gray-600">
+        <p>{t.cohost}</p>
+        <p>{t.responseTime}</p>
+        <p>{t.responseRate}</p>
+      </div>
+      <a 
+        href="https://www.airbnb.fr/users/show/566722186" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="inline-flex items-center mt-4 text-primary-600 hover:text-primary-700"
+      >
+        {t.viewProfile}
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import AirbnbProfile from '../../components/AirbnbProfile.astro';
+const translations = await import('../../i18n/en.json');
+const t = translations.default;
+---
+
+<Layout title={t.contact.title} lang="en">
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-center mb-8">{t.contact.title}</h1>
+    <AirbnbProfile lang="en" />
+    <p class="text-center text-gray-600 mb-12">{t.contact.description}</p>
+    <ContactForm t={t} />
+  </main>
+</Layout>

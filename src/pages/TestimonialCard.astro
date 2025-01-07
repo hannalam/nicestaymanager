@@ -1,0 +1,23 @@
+---
+interface Props {
+  name: string;
+  text: string;
+  location: string;
+  time: string;
+  avatar: string;
+}
+
+const { name, text, location, time, avatar } = Astro.props;
+---
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+  <div class="flex items-center mb-4">
+    <img src={avatar} alt={name} class="w-12 h-12 rounded-full mr-4">
+    <div>
+      <div class="font-semibold">{name}</div>
+      <div class="text-gray-500 text-sm">{location}</div>
+      <div class="text-gray-400 text-sm">{time}</div>
+    </div>
+  </div>
+  <p class="text-gray-600">{text}</p>
+</div>

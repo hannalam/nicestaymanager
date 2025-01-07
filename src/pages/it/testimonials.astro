@@ -1,0 +1,64 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TestimonialCard from '../../components/TestimonialCard.astro';
+const translations = await import('../../i18n/it.json');
+const t = translations.default;
+---
+
+<Layout title={t.testimonials.title} lang="it">
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+    <img src="/images/testimonial/testimonialfr.png" alt="testimonialfr" />
+      <div class="flex justify-center items-center gap-4 mb-4">
+        <h1 class="text-6xl font-bold"></h1>
+      </div>
+      <h2 class="text-2xl font-bold mb-4">Coup de cœur voyageurs</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">{t.testimonials.description}</p>
+    </div>
+
+    <!-- Ratings Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-12">
+      <div class="text-center">
+        <div class="font-bold text-xl">{t.testimonials.ratings.overall}</div>
+        <div class="text-sm text-gray-600">Évaluation globale</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-xl">{t.testimonials.ratings.cleanliness}</div>
+        <div class="text-sm text-gray-600">Propreté</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-xl">{t.testimonials.ratings.precision}</div>
+        <div class="text-sm text-gray-600">Précision</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-xl">{t.testimonials.ratings.arrival}</div>
+        <div class="text-sm text-gray-600">Arrivée</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-xl">{t.testimonials.ratings.communication}</div>
+        <div class="text-sm text-gray-600">Communication</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-xl">{t.testimonials.ratings.location}</div>
+        <div class="text-sm text-gray-600">Emplacement</div>
+      </div>
+      <div class="text-center">
+        <div class="font-bold text-xl">{t.testimonials.ratings.value}</div>
+        <div class="text-sm text-gray-600">Qualité-prix</div>
+      </div>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {t.testimonials.list.map((testimonial) => (
+        <TestimonialCard
+          name={testimonial.name}
+          text={testimonial.text}
+          location={testimonial.location}
+          time={testimonial.time}
+          avatar={testimonial.avatar}
+        />
+      ))}
+    </div>
+  </main>
+</Layout>

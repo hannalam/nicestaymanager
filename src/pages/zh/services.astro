@@ -1,0 +1,78 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AirbnbProfile from '../../components/AirbnbProfile.astro';
+const translations = await import('../../i18n/zh.json');
+const t = translations.default;
+
+const services = [
+  {
+    title: "廣告設置",
+    description: "我們協助您設置廣告，從完美的標題到最佳化的描述，吸引更多目光。",
+    icon: "edit"
+  },
+  {
+    title: "價格與行程安排設置",
+    description: "我們幫助您設定具有競爭力的價格並管理您的行程安排，以確保最佳入住率。",
+    icon: "calendar"
+  },
+  {
+    title: "預訂請求管理",
+    description: "我們快速處理所有預訂請求，為房東與客人提供流暢的流程。",
+    icon: "book"
+  },
+  {
+    title: "與旅客的溝通",
+    description: "我們與旅客進行清晰且迅速的溝通，在他們入住前、入住期間和之後滿足其需求。",
+    icon: "comments"
+  },
+  {
+    title: "入住、退房及當地旅客服務支援",
+    description: "我們為旅客提供當地支援，提升其體驗，確保一段難忘的住宿。",
+    icon: "key"
+  },
+  {
+    title: "清潔與維護",
+    description: "我們協調專業的清潔與維護服務，保持您的房產完美無缺。",
+    icon: "broom"
+  },
+  {
+    title: "房產攝影",
+    description: "我們安排專業攝影師拍攝，通過吸引人的照片展示您的房產。",
+    icon: "camera"
+  },
+  {
+    title: "室內裝飾與設計",
+    description: "我們提供室內裝飾與設計建議，營造溫馨且美觀的環境。",
+    icon: "couch"
+  },
+  {
+    title: "法規相關行政手續",
+    description: "我們處理預訂核准事宜，確保您的房產接待合適且合格的旅客。",
+    icon: "clipboard-check"
+  }
+];
+---
+
+<Layout title={t.services.title} lang="zh">
+  <main class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-16">
+      <h1 class="text-5xl font-bold mb-6">{t.services.title}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">{t.services.description}</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map(service => (
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+          <div class="mb-6">
+            <div class="w-16 h-16 border-2 border-primary-300 rounded-lg flex items-center justify-center">
+              <i class={`fas fa-${service.icon} text-3xl text-primary-600`}></i>
+            </div>
+          </div>
+          
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">{service.title}</h3>
+          <p class="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>

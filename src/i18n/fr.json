@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "testimonials": "Témoignages",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "pricing": "Tarifs"
+  },
+  "home": {
+    "title": "Services de Conciergerie Professionnels",
+    "welcome": "Bienvenue chez Nice Stay Manager !",
+    "description": "Nous sommes là pour simplifier la gestion de votre propriété et offrir des expériences inoubliables à vos invités. Qu'il s'agisse d'un accueil chaleureux en personne ou d'un enregistrement autonome pratique, nous veillons à ce que chaque détail soit pris en charge.",
+    "learnMore": "En Savoir Plus"
+  },
+  "about": {
+    "title": "À Propos de Nice Stay Manager",
+    "description": "Nice Stay Manager est votre partenaire de confiance en gestion immobilière, dédié à offrir des expériences exceptionnelles tant aux propriétaires qu’à leurs invités dans la belle ville de Nice. Notre passion pour l’hospitalité et notre souci du détail nous ont déjà valu d’excellents témoignages de clients satisfaits.",
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Nous nous efforçons de fournir des services de gestion immobilière exceptionnels qui dépassent les attentes, garantissant la tranquillité d'esprit des propriétaires et créant des séjours mémorables pour les clients. Notre mission est simple : éliminer le stress lié à la gestion des locations à court terme (ex. Airbnb, Booking.com...) et aider votre propriété à atteindre son plein potentiel."
+    },
+    "experience": {
+      "title": "Notre expérience et nos origines",
+      "description": "Avec une formation en informatique et plus de cinq ans d’expérience en relations clients au sein de Hong Kong Disneyland, nous apportons un mélange unique de compétences techniques et d’expertise en hospitalité. Qu’il s’agisse de résoudre des défis logistiques complexes ou de créer des expériences mémorables pour les clients, nous savons ce qu’il faut pour faire briller votre propriété sur le marché concurrentiel des locations à Nice. Laissez-nous vous aider à offrir un service exceptionnel et à obtenir des résultats remarquables pour votre propriété !"
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "description": "Découvrez notre gamme complète de services de gestion immobilière conçus pour maximiser le potentiel de votre location.",
+    "homeStaging": {
+      "title": "Home Staging",
+      "description": "Transformez votre propriété pour attirer plus de réservations et augmenter vos tarifs. Nos experts en mise en valeur créent une ambiance moderne et accueillante qui séduit vos invités."
+    }
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "description": "Ces avis sur Airbnb sont basés sur les notes des invités, les retours d'expérience et la fiabilité des annonces.",
+    "list": [
+      {
+        "name": "Quentin",
+        "text": "fidèle à l’annonce, hôte très accueillant, je recommande",
+        "location": "2 mois  sur Airbnb",
+        "time": "Il y a 1 semaine"
+      },
+      {
+        "name": "Chloe",
+        "text": "heureux de séjourner ici, l'hôte a été gentil et réactif, tout était propre et exactement comme décrit et la communication a été facile, je recommande vivement ce séjour merci :)",
+        "location": "9 ans sur Airbnb",
+        "time": "Il y a 1 semaine"
+      },
+      {
+        "name": "Monte",
+        "text": "Merci à vous deux !",
+        "location": "5 ans  sur Airbnb",
+        "time": "Il y a 2 semaines"
+      },
+      {
+        "name": "Nathy",
+        "text": "L'appartement de Maxime était vraiment agréable, tout était propre et il est très accueillant et sympathique ! Merci beaucoup de m'avoir accueilli !",
+        "location": "2 ans sur Airbnb",
+        "time": "Il y a 3 semaines"
+      },
+      {
+        "name": "Emil",
+        "text": "Maxime a été un hôte merveilleux. Tout était facile et simple. La chambre était bonne et la douche était excellente. Très proche et bien reliée à l'aéroport.",
+        "location": "12 ans sur Airbnb",
+        "time": "Il y a 3 semaines"
+      },
+      {
+        "name": "Magdalena",
+        "text": "Franchement c’est très bien passé et j’ai passé une bonne nuit",
+        "location": "11 mois sur Airbnb",
+        "time": "Il y a 4 semaines"
+      }
+    ],
+    "ratings": {
+      "overall": "5,0",
+      "cleanliness": "5,0",
+      "precision": "4,9",
+      "arrival": "4,9",
+      "communication": "5,0",
+      "location": "4,9",
+      "value": "5,0"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "description": "Contactez-nous pour en savoir plus sur nos services ou pour discuter de vos besoins en gestion immobilière.",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Numéro de Téléphone",
+    "message": "Message",
+    "submit": "Envoyer le Message"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "questions": [
+      {
+        "question": "Pourquoi choisir Nice Stay Manager au lieu de gérer la propriété moi-même ?",
+        "answer": "Gérer une location saisonnière demande beaucoup de temps, entre la communication avec les invités, le ménage et l'entretien. Grâce à notre expertise, nous gérons ces tâches efficacement, garantissant une expérience fluide pour vos invités tout en vous permettant de maximiser vos revenus locatifs en toute tranquillité."
+      },
+      {
+        "question": "Comment aidez-vous à augmenter les réservations et les revenus de ma propriété ?",
+        "answer": "Nous optimisons votre annonce avec des photos professionnelles, des descriptions attrayantes et des stratégies tarifaires dynamiques. Nos services d'hospitalité génèrent des avis positifs, attirant ainsi plus de voyageurs et augmentant vos revenus."
+      },
+      {
+        "question": "Quels types de biens gérez-vous ?",
+        "answer": "Nous nous spécialisons dans la gestion d'appartements, de maisons de vacances et de villas à Nice et dans les environs, principalement pour des locations saisonnières et de courte durée."
+      },
+      {
+        "question": "Comment gérez-vous les plaintes ou urgences des invités ?",
+        "answer": "Notre équipe réagit rapidement à tout problème rencontré par les invités, qu'il s'agisse d'une réparation, d'une question sur la propriété ou d'une urgence. Cela garantit la satisfaction des invités et protège la réputation de votre propriété."
+      },
+      {
+        "question": "Pouvez-vous gérer les enregistrements autonomes ?",
+        "answer": "Nous proposons des options d'enregistrement flexibles, y compris l'enregistrement autonome via une boîte à clés sécurisée. Cette solution convient parfaitement aux propriétaires qui préfèrent moins d'implication directe."
+      },
+      {
+        "question": "Comment assurez-vous le bon entretien de ma propriété  ?",
+        "answer": "Nous effectuons des inspections régulières, planifions un nettoyage professionnel après chaque séjour et prenons en charge les petites réparations ou besoins d'entretien immédiatement. Votre bien reste ainsi toujours en parfait état pour accueillir vos invités."
+      },
+      {
+        "question": "Puis-je continuer à gérer certains aspects de ma propriété tout en utilisant vos services ?",
+        "answer": "Bien sûr. Vous conservez le contrôle total de votre propriété, y compris la fixation des tarifs et l'approbation des réservations. Nous nous occupons des aspects opérationnels pour vous simplifier la gestion."
+      },
+      {
+        "question": "Fournissez-vous des rapports de performance mensuels ?",
+        "answer": "Oui, nous offrons des rapports mensuels détaillés comprenant les statistiques de réservation, les revenus, les retours des invités et les mises à jour sur l'entretien, afin que vous soyez toujours informé de la performance de votre bien."
+      },
+      {
+        "question": "Vos services sont-ils flexibles ?",
+        "answer": "Nous proposons des forfaits personnalisables adaptés à vos besoins spécifiques. Que vous souhaitiez une gestion complète ou une assistance pour certaines tâches comme les arrivées ou le ménage, nous sommes là pour vous aider."
+      },
+      {
+        "question": "Quels sont vos tarifs et comment sont-ils structurés ?",
+        "answer": "Nos frais standard incluent une commission de 18 à 20 % sur les réservations effectuées via les plateformes (par exemple, Airbnb), ainsi qu'un forfait ménage à partir de 35 €, selon la taille de la propriété. Nous proposons également des services supplémentaires, tels que les arrivées tardives et le home staging, à des tarifs très compétitifs."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Nos Tarifs",
+    "subtitle": "Des tarifs compétitifs et transparents",
+    "features": [
+      "18-20 % de commission sur les réservations Airbnb",
+      "Frais de ménage à partir de 35 €",
+      "Services optionnels tels que l'entretien du linge et l'enregistrement tardif, adaptés à vos besoins"
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi Siamo", 
+    "services": "Servizi",
+    "testimonials": "Testimonianze",
+    "contact": "Contatti",
+    "faq": "Domande Frequenti",
+    "pricing": "Prezzi"
+  },
+  "home": {
+    "title": "Servizi di Concierge Professionale",
+    "welcome": "Benvenuti a Nice Stay Manager!",
+    "description": "Siamo qui per semplificare la gestione delle proprietà e creare esperienze indimenticabili per i vostri ospiti. Che si tratti di un caloroso benvenuto di persona o di un pratico self check-in, garantiamo che ogni dettaglio sia curato.",
+    "learnMore": "Scopri di Più"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "description": "Nice Stay Manager è il tuo partner di fiducia nella gestione delle proprietà, dedicato a fornire esperienze eccezionali sia ai proprietari che ai loro ospiti nella splendida città di Nizza. La nostra passione per l'ospitalità e l'attenzione ai dettagli ci hanno già fatto guadagnare recensioni entusiastiche da clienti soddisfatti.",
+    "mission": {
+      "title": "La Nostra Missione",
+      "description": "Ci impegniamo a offrire servizi di gestione delle proprietà che superino le aspettative, garantendo tranquillità ai proprietari e creando soggiorni memorabili per gli ospiti. La nostra missione è semplice: eliminare lo stress dalla gestione degli affitti a breve termine (ad esempio Airbnb, Booking.com...) e aiutare la tua proprietà a raggiungere il suo pieno potenziale."
+    },
+    "experience": {
+      "title": "La Nostra Esperienza",
+      "description": "Con una formazione in informatica e oltre cinque anni di esperienza nelle relazioni con i clienti a Disneyland Hong Kong, uniamo competenze tecniche e un'ospitalità di alto livello. Dalla risoluzione di sfide logistiche complesse alla creazione di esperienze magiche per gli ospiti, sappiamo cosa serve per far brillare la tua proprietà nel competitivo mercato degli affitti di Nizza. Lascia che ti aiutiamo a offrire un servizio eccezionale e a ottenere risultati straordinari con la tua proprietà!"
+    }
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "description": "Scopri la nostra gamma completa di servizi di gestione delle proprietà progettati per massimizzare il potenziale del tuo affitto.",
+    "homeStaging": {
+      "title": "Home Staging",
+      "description": "Trasforma la tua proprietà per attirare più prenotazioni e ottenere tariffe più elevate. I nostri esperti di staging creano un'atmosfera moderna e accogliente che risuona con gli ospiti."
+    }
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Nostri Clienti",
+    "description": "Queste recensioni su Airbnb si basano su valutazioni degli ospiti, feedback e affidabilità degli annunci.",
+    "list": [
+      {
+        "name": "Quentin",
+        "text": "Fedele all'annuncio, ospite molto accogliente, lo consiglio.",
+        "location": "2 mesi su Airbnb",
+        "time": "1 settimana fa",
+        "avatar": "/images/avatars/nadine.jpg"
+      },
+      {
+        "name": "Chloe",
+        "text": "Felice di aver soggiornato qui, il proprietario è stato gentile e reattivo, tutto era pulito e esattamente come descritto, comunicazione facile, altamente raccomandato, grazie :)",
+        "location": "9 anni su Airbnb",
+        "time": "1 settimana fa",
+        "avatar": "/images/avatars/daniela.jpg"
+      },
+      {
+        "name": "Mounted",
+        "text": "Grazie a entrambi!",
+        "location": "5 anni su Airbnb",
+        "time": "2 settimane fa",
+        "avatar": "/images/avatars/leandro.jpg"
+      },
+      {
+        "name": "Nuriya",
+        "text": "L'appartamento di Maxime era davvero bello, tutto pulito e lui è molto accogliente e amichevole! Grazie mille per avermi ospitato!",
+        "location": "2 anni su Airbnb",
+        "time": "3 settimane fa",
+        "avatar": "/images/avatars/nathy.jpg"
+      },
+      {
+        "name": "Oliver",
+        "text": "Maxime è stato un ospite meraviglioso. Tutto è stato facile e semplice. La stanza era buona e la doccia eccellente. Molto vicino e ben collegato con l'aeroporto.",
+        "location": "12 anni su Airbnb",
+        "time": "3 settimane fa",
+        "avatar": "/images/avatars/emil.jpg"
+      },
+      {
+        "name": "Sami",
+        "text": "Onestamente è andato tutto molto bene e ho trascorso una buona notte.",
+        "location": "11 mesi su Airbnb",
+        "time": "4 settimane fa",
+        "avatar": "/images/avatars/magdalena.jpg"
+      }
+    ],
+    "ratings": {
+      "overall": "5.0",
+      "cleanliness": "5.0",
+      "precision": "4.9",
+      "arrival": "4.9",
+      "communication": "5.0",
+      "location": "4.9",
+      "value": "5.0"
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "description": "Contattaci per saperne di più sui nostri servizi o per discutere le tue esigenze di gestione della proprietà.",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Numero di Telefono",
+    "message": "Messaggio",
+    "submit": "Invia Messaggio"
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "questions": [
+      {
+        "question": "Perché scegliere Nice Stay Manager invece di gestire la proprietà da soli?",
+        "answer": "Gestire un affitto a breve termine richiede molto tempo, dalla comunicazione con gli ospiti alla pulizia e manutenzione. Con la nostra esperienza, gestiamo tutti questi compiti in modo efficiente, garantendo un'esperienza senza problemi per i tuoi ospiti mentre massimizzi i tuoi guadagni e hai la tranquillità di sapere che tutto è in buone mani."
+      },
+      {
+        "question": "Come aiutate ad aumentare le prenotazioni e i guadagni della mia proprietà?",
+        "answer": "Ottimizziamo il tuo annuncio con foto professionali, descrizioni accattivanti e strategie di prezzo dinamico. I nostri servizi di ospitalità portano a recensioni positive, che attraggono più ospiti e aumentano i ricavi."
+      },
+      {
+        "question": "Che tipo di proprietà gestite?",
+        "answer": "Siamo specializzati nella gestione di appartamenti, case vacanze e ville a Nizza e dintorni, concentrandoci su proprietà utilizzate per affitti a breve termine e stagionali."
+      },
+      {
+        "question": "Come gestite reclami o emergenze degli ospiti?",
+        "answer": "Il nostro team affronta prontamente qualsiasi problema riscontrato dagli ospiti durante il soggiorno, sia esso una riparazione, una domanda sulla proprietà o una questione urgente. Ciò garantisce la soddisfazione degli ospiti e protegge la reputazione della tua proprietà."
+      },
+      {
+        "question": "Potete gestire i self-check-in?",
+        "answer": "Offriamo opzioni di check-in flessibili, incluso il self-check-in tramite una serratura con codice sicuro. Questa opzione è ideale per i proprietari che preferiscono un coinvolgimento minimo e assicura convenienza e soddisfazione per gli ospiti."
+      },
+      {
+        "question": "Come garantite che la mia proprietà sia ben mantenuta?",
+        "answer": "Effettuiamo ispezioni regolari, programmiamo pulizie professionali dopo ogni soggiorno e affrontiamo immediatamente eventuali piccoli interventi di manutenzione. Questo assicura che la tua proprietà sia sempre in perfette condizioni per ogni ospite."
+      },
+      {
+        "question": "Posso ancora gestire alcuni aspetti della mia proprietà mentre utilizzo i vostri servizi?",
+        "answer": "Assolutamente sì. Hai il pieno controllo sulla tua proprietà, compreso il prezzo di affitto e l'approvazione delle prenotazioni. Noi ci occupiamo degli aspetti operativi, permettendoti di concentrarti su ciò che conta di più per te."
+      },
+      {
+        "question": "Fornite report mensili sulle prestazioni?",
+        "answer": "Sì, forniamo rapporti dettagliati mensili che includono statistiche sulle prenotazioni, analisi dei ricavi, feedback degli ospiti e aggiornamenti sulla manutenzione, così sei sempre informato sulle prestazioni della tua proprietà."
+      },
+      {
+        "question": "Quanto sono flessibili i vostri servizi?",
+        "answer": "Offriamo pacchetti di servizi personalizzabili per soddisfare le tue esigenze specifiche. Che tu desideri una gestione completa o supporto per determinati compiti come il check-in degli ospiti o la pulizia, siamo qui per aiutarti."
+      },
+      {
+        "question": "Quali sono le vostre tariffe e come sono strutturate?",
+        "answer": "La nostra tariffa standard include una commissione del 18-20% sulle prenotazioni tramite piattaforme (es. Airbnb), con una tariffa di pulizia a partire da €35, a seconda delle dimensioni della proprietà. Offriamo anche servizi aggiuntivi, come il check-in tardivo e l'allestimento della casa, a tariffe altamente competitive."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Le Nostre Tariffe",
+    "subtitle": "Prezzi Competitivi e Trasparenti",
+    "features": [
+      "Commissione del 18-20% sulle prenotazioni Airbnb",
+      "Tariffe di pulizia a partire da €35",
+      "Servizi opzionali come cura della biancheria e check-in tardivo su misura per le tue esigenze"
+    ]
+  }
+}

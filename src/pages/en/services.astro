@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AirbnbProfile from '../../components/AirbnbProfile.astro';
+const translations = await import('../../i18n/en.json');
+const t = translations.default;
+
+const services = [
+  {
+    title: "Listing Configuration",
+    description: "We guide you through listing configuration, from the perfect title to optimized descriptions for maximum appeal.",
+    icon: "edit"
+  },
+  {
+    title: "Pricing & Calendar Management",
+    description: "We help set competitive prices and manage your calendar to ensure optimal occupancy.",
+    icon: "calendar"
+  },
+  {
+    title: "Booking Management",
+    description: "We handle all booking requests promptly, ensuring a smooth process for hosts and guests.",
+    icon: "book"
+  },
+  {
+    title: "Guest Communication",
+    description: "We communicate clearly and promptly with travelers, addressing their needs before, during, and after their stay.",
+    icon: "comments"
+  },
+  {
+    title: "Check-in & Local Assistance",
+    description: "We provide local assistance to travelers to enhance their experience and ensure a memorable stay.",
+    icon: "key"
+  },
+  {
+    title: "Cleaning & Maintenance",
+    description: "We coordinate professional cleaning and maintenance services to keep your property in perfect condition.",
+    icon: "broom"
+  },
+  {
+    title: "Property Photography",
+    description: "We arrange professional photo sessions to showcase your property with attractive images.",
+    icon: "camera"
+  },
+  {
+    title: "Interior Design & Staging",
+    description: "We offer interior design and styling advice to create a welcoming and aesthetic environment.",
+    icon: "couch"
+  },
+  {
+    title: "Regulatory Compliance",
+    description: "We manage reservation approvals to welcome selected and qualified travelers to your establishment.",
+    icon: "clipboard-check"
+  }
+];
+
+---
+
+<Layout title={t.services.title} lang="en">
+  <main class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-16">
+      <h1 class="text-5xl font-bold mb-6">{t.services.title}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">{t.services.description}</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map(service => (
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+          <div class="mb-6">
+            <div class="w-16 h-16 border-2 border-primary-300 rounded-lg flex items-center justify-center">
+              <i class={`fas fa-${service.icon} text-3xl text-primary-600`}></i>
+            </div>
+          </div>
+          
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">{service.title}</h3>
+          <p class="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>

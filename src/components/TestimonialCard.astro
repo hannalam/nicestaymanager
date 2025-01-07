@@ -1,0 +1,18 @@
+---
+interface Props {
+  name: string;
+  text: string;
+  location?: string;
+  time?: string;
+}
+
+const { name, text, location, time } = Astro.props;
+---
+
+<div class="bg-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105">
+  <div class="mb-4">
+    <div class="font-semibold">{name}</div>
+    {location && <div class="text-gray-500 text-sm">{location}</div>}
+  </div>
+  <p class="text-gray-600 italic">"{text}"</p>
+</div>

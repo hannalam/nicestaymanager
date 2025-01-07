@@ -1,0 +1,38 @@
+---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import SEOHead from '../components/SEOHead.astro';
+import '../styles/global.css';
+
+const { title, description, lang = 'en' } = Astro.props;
+
+// Load translations
+const translations = await import(`../i18n/${lang}.json`);
+const t = translations.default;
+
+// Default meta description based on language
+const defaultDescription = {
+  fr: "Nice Stay Manager est votre partenaire de confiance pour la gestion de locations courte durée à Nice. Services professionnels de conciergerie et gestion Airbnb.",
+  en: "Nice Stay Manager is your trusted partner for short-term rental management in Nice. Professional concierge and Airbnb management services.",
+  zh: "Nice Stay Manager 是您在尼斯值得信賴的短期租賃管理合作夥伴。專業禮賓和 Airbnb 管理服務。",
+  it: "Nice Stay Manager è il tuo partner di fiducia per la gestione degli affitti a breve termine a Nizza. Servizi professionali di concierge e gestione Airbnb."
+}[lang];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <SEOHead
+      title={title}
+      description={description || defaultDescription}
+      lang={lang}
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-50">
+    <Navigation lang={lang} t={t} />
+    <slot />
+    <Footer lang={lang} />
+  </body>
+</html>

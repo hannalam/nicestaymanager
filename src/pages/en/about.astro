@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const translations = await import('../../i18n/en.json');
+const t = translations.default;
+---
+
+<Layout title={t.about.title} lang="en">
+<main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-center mb-8">{t.about.title}</h1>
+    <div class="prose prose-lg mx-auto">
+      <p class="text-lg text-gray-600 mb-12">{t.about.description}</p>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+          <div class="mb-6">
+            <div class="w-16 h-16 border-2 border-primary-300 rounded-lg flex items-center justify-center">
+              <i class="fas fa-bullseye text-3xl text-primary-600"></i>
+            </div>
+          </div>
+          <h2 class="text-2xl font-bold mb-4">{t.about.mission.title}</h2>
+          <p class="text-gray-600">{t.about.mission.description}</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+          <div class="mb-6">
+            <div class="w-16 h-16 border-2 border-primary-300 rounded-lg flex items-center justify-center">
+              <i class="fas fa-star text-3xl text-primary-600"></i>
+            </div>
+          </div>
+          <h2 class="text-2xl font-bold mb-4">{t.about.experience.title}</h2>
+          <p class="text-gray-600">{t.about.experience.description}</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto border-2 border-primary-300 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-home text-3xl text-primary-600"></i>
+          </div>
+          <p class="font-semibold">Property management</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto border-2 border-primary-300 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-concierge-bell text-3xl text-primary-600"></i>
+          </div>
+          <p class="font-semibold">Concierge service</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 mx-auto border-2 border-primary-300 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-chart-line text-3xl text-primary-600"></i>
+          </div>
+          <p class="font-semibold">Revenue Optimization</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

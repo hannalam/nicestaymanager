@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About", 
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "pricing": "Pricing"
+  },
+  "home": {
+    "title": "Professional Conciergerie Services",
+    "welcome": "Welcome to Nice Stay Manager!",
+    "description": "We're here to simplify property management for you and create unforgettable experiences for your guests. Whether it's a warm in-person greeting or a convenient self-check-in, we ensure every detail is covered.",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Nice Stay Manager",
+    "description": "Nice Stay Manager is your trusted partner in property management, dedicated to delivering exceptional experiences for both property owners and their guests in the beautiful city of Nice. Our passion for hospitality and attention to detail have already earned us glowing testimonials from satisfied clients.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We strive to provide outstanding property management services that exceed expectations, ensuring peace of mind for property owners and creating memorable stays for guests. Our mission is simple: to take the stress out of short-term rental management(e.g. Airbnb, Booking.com...) and help your property achieve its full potential."
+    },
+    "experience": {
+      "title": "Our Background & Experience",
+      "description": "With a combined background in computer science and over five years of customer relations experience at Hong Kong Disneyland, we bring a unique blend of technical expertise and top-tier hospitality skills to the table. From solving complex logistical challenges to creating magical guest experiences, we understand what it takes to make your property truly shine in the competitive Nice rental market. Let us help you deliver exceptional service and achieve outstanding results with your rental property!"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Discover our comprehensive range of property management services designed to maximize your rental's potential.",
+    "homeStaging": {
+      "title": "Home Staging",
+      "description": "Transform your property to attract more bookings and command higher rates. Our staging experts create a modern and welcoming atmosphere that resonates with guests."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "These reviews on Airbnb are based on guest ratings, feedback, and the reliability of listings.",
+    "list": [
+      {
+        "name": "Quentin",
+        "text": "True to the ad, very welcoming host, I recommend",
+        "location": "2 months on Airbnb",
+        "time": "1 week ago",
+        "avatar": "/images/avatars/nadine.jpg"
+      },
+      {
+        "name": "Chloe",
+        "text": "happy to stay here, the host was kind and responsive, everything was clean and exactly as described and communication was easy, highly recommend this stay thank you :)",
+        "location": "9 years on Airbnb",
+        "time": "1 week ago",
+        "avatar": "/images/avatars/daniela.jpg"
+      },
+      {
+        "name": "Mounted",
+        "text": "Thank you both!",
+        "location": "5 years on Airbnb",
+        "time": "2 weeks ago",
+        "avatar": "/images/avatars/leandro.jpg"
+      },
+      {
+        "name": "Nuriya",
+        "text": "Maxime's apartment was really nice, everything was clean and he is very welcoming and friendly! Thank you very much for having me!",
+        "location": "2 years on Airbnb",
+        "time": "3 weeks ago",
+        "avatar": "/images/avatars/nathy.jpg"
+      },
+      {
+        "name": "Oliver",
+        "text": "Maxime was a wonderful host. Everything was easy and simple. The room was good and the shower was excellent. Very close and well connected to the airport.",
+        "location": "12 years on Airbnb",
+        "time": "3 weeks ago",
+        "avatar": "/images/avatars/emil.jpg"
+      },
+      {
+        "name": "Sami",
+        "text": "Honestly it went very well and I had a good night.",
+        "location": "11 months on Airbnb",
+        "time": "4 weeks ago",
+        "avatar": "/images/avatars/magdalena.jpg"
+      }
+    ],
+    "ratings": {
+      "overall": "5.0",
+      "cleanliness": "5.0",
+      "precision": "4.9",
+      "arrival": "4.9",
+      "communication": "5.0",
+      "location": "4.9",
+      "value": "5.0"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us to learn more about our services or to discuss your property management needs.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "submit": "Send Message"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "Why should I choose Nice Stay Manager over managing the property myself?",
+        "answer": "Managing a short-term rental involves a significant time commitment, from guest communication to cleaning and maintenance. With our expertise, we handle all these tasks efficiently, ensuring your guests have a seamless experience while you enjoy peace of mind and maximize your rental income."
+      },
+      {
+        "question": "How do you help increase my property’s bookings and revenue?",
+        "answer": "We optimize your property listing with professional photos, compelling descriptions, and dynamic pricing strategies. Our hospitality services lead to positive reviews, which attract more guests and increase revenue."
+      },
+      {
+        "question": "What types of properties do you manage?",
+        "answer": "We specialize in managing apartments, holiday homes, and villas in Nice and the surrounding areas, focusing on properties used for short-term and seasonal rentals."
+      },
+      {
+        "question": "How do you handle guest complaints or emergencies?",
+        "answer": "Our team promptly addresses any issues guests encounter during their stay, whether it’s a repair, a question about the property, or an urgent matter. This ensures guest satisfaction and protects your property’s reputation."
+      },
+      {
+        "question": "Can you manage self-check-ins?",
+        "answer": "We offer flexible check-in options, including self-check-in using a secure key lock. For property owners who prefer less direct involvement, this option ensures convenience and guest satisfaction."
+      },
+      {
+        "question": "How do you ensure my property is well-maintained?",
+        "answer": "We conduct regular inspections, schedule professional cleaning after each stay, and address any minor repairs or maintenance needs immediately. This keeps your property in top condition for every guest."
+      },
+      {
+        "question": "Can I still manage some aspects of my property while using your services?",
+        "answer": "Absolutely. You maintain full control over your property, including setting rental rates and approving bookings. We handle the operational aspects, allowing you to focus on what matters most to you."
+      },
+      {
+        "question": "Do you provide monthly performance reports?",
+        "answer": "Yes, we provide detailed monthly reports that include booking statistics, revenue breakdowns, guest feedback, and maintenance updates, so you always stay informed about your property’s performance."
+      },
+      {
+        "question": "How flexible are your services?",
+        "answer": "We offer customizable service packages to fit your specific needs. Whether you want full-service management or support for certain tasks like guest check-ins or cleaning, we’re here to help."
+      },
+      {
+        "question": "What are your fees, and how are they structured?",
+        "answer": "Our standard fee includes an 18-20% commission on platform bookings (e.g., Airbnb), with a cleaning fee starting at €35, depending on the size of the property. We also offer additional services, such as late check-ins and home staging, all at highly competitive rates."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Our Pricing",
+    "subtitle": "Competitive and Transparent Pricing",
+    "features": [
+      "18-20% commission on Airbnb bookings",
+      "Cleaning fees starting at €35",
+      "Optional services like linen care and late check-in, tailored to your needs"
+    ]
+  }
+}

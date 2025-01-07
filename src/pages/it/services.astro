@@ -1,0 +1,78 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AirbnbProfile from '../../components/AirbnbProfile.astro';
+const translations = await import('../../i18n/it.json');
+const t = translations.default;
+
+const services = [
+  {
+    title: "Configurazione dell'annuncio",
+    description: "Ti guidiamo nella configurazione dell'annuncio, dal titolo perfetto alla descrizione ottimizzata per massimizzare l'attrattiva.",
+    icon: "edit"
+  },
+  {
+    title: "Configurazione dei prezzi e del calendario",
+    description: "Ti aiutiamo a fissare prezzi competitivi e a gestire il tuo calendario per garantire un'occupazione ottimale.",
+    icon: "calendar"
+  },
+  {
+    title: "Gestione delle richieste di prenotazione",
+    description: "Gestiamo rapidamente tutte le richieste di prenotazione, garantendo un processo fluido per ospiti e viaggiatori.",
+    icon: "book"
+  },
+  {
+    title: "Comunicazione con i viaggiatori",
+    description: "Comunichiamo in modo chiaro e rapido con i viaggiatori, rispondendo alle loro esigenze prima, durante e dopo il soggiorno.",
+    icon: "comments"
+  },
+  {
+    title: "Arrivi, partenze e assistenza in loco per i viaggiatori",
+    description: "Forniamo assistenza locale ai viaggiatori per migliorare la loro esperienza e garantire un soggiorno memorabile.",
+    icon: "key"
+  },
+  {
+    title: "Pulizia e manutenzione",
+    description: "Coordiniamo servizi di pulizia e manutenzione professionale per mantenere la tua proprietà in perfette condizioni.",
+    icon: "broom"
+  },
+  {
+    title: "Fotografie della proprietà",
+    description: "Organizziamo sessioni fotografiche professionali per valorizzare la tua proprietà con immagini accattivanti.",
+    icon: "camera"
+  },
+  {
+    title: "Decorazione e/o arredamento d'interni",
+    description: "Offriamo consigli su decorazione e stile d'interni per creare un ambiente accogliente ed estetico.",
+    icon: "couch"
+  },
+  {
+    title: "Pratiche amministrative relative alle normative",
+    description: "Gestiamo l'approvazione delle prenotazioni per accogliere viaggiatori selezionati e qualificati nella tua struttura.",
+    icon: "clipboard-check"
+  }
+];
+---
+
+<Layout title={t.services.title} lang="it">
+  <main class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-16">
+      <h1 class="text-5xl font-bold mb-6">{t.services.title}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">{t.services.description}</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map(service => (
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+          <div class="mb-6">
+            <div class="w-16 h-16 border-2 border-primary-300 rounded-lg flex items-center justify-center">
+              <i class={`fas fa-${service.icon} text-3xl text-primary-600`}></i>
+            </div>
+          </div>
+          
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">{service.title}</h3>
+          <p class="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>
