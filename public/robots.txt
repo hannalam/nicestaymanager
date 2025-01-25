@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
 
+# Sitemaps
 Sitemap: https://nicestaymanager.com/sitemap-index.xml
+Sitemap: https://nicestaymanager.com/sitemap-0.xml
+
+# Common crawl optimizations
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Prevent duplicate content indexing
+Disallow: /*?utm_
+Disallow: /*?fbclid=
