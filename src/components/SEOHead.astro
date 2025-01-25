@@ -15,22 +15,110 @@ const {
   canonicalURL = Astro.url.href,
 } = Astro.props;
 
-const siteName = 'Nice Stay Manager';
+// SEO Meta Data
+const siteName = "Nice Stay Manager";
+const siteDescription = {
+  fr: "Gestion professionnelle de locations courte durée à Nice. Services de conciergerie, gestion Airbnb, optimisation des revenus locatifs et accueil personnalisé des voyageurs.",
+  en: "Professional short-term rental management in Nice. Concierge services, Airbnb management, rental income optimization, and personalized guest welcome.",
+  zh: "尼斯專業短期租賃管理。禮賓服務、Airbnb管理、租金收入優化和個性化賓客接待。",
+  it: "Gestione professionale di affitti a breve termine a Nizza. Servizi di concierge, gestione Airbnb, ottimizzazione del reddito da locazione e accoglienza personalizzata degli ospiti."
+}[lang] || siteDescription.fr;
+
+const siteKeywords = {
+  fr: "gestion locative, Airbnb, Nice, conciergerie, location courte durée, gestion immobilière, accueil voyageurs, optimisation revenus locatifs, Côte d'Azur",
+  en: "property management, Airbnb, Nice, concierge service, short-term rental, real estate management, guest welcome, rental income optimization, French Riviera",
+  zh: "房產管理, Airbnb, 尼斯, 禮賓服務, 短期租賃, 房地產管理, 賓客接待, 租金收入優化, 法國蔚藍海岸",
+  it: "gestione immobiliare, Airbnb, Nizza, servizio di concierge, affitto breve termine, gestione immobili, accoglienza ospiti, ottimizzazione rendite, Costa Azzurra"
+}[lang];
+
 const twitterHandle = '@nicestaymanager';
+const siteLocale = {
+  fr: 'fr_FR',
+  en: 'en_US',
+  zh: 'zh_TW',
+  it: 'it_IT'
+}[lang];
+
+// Structured Data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nice Stay Manager",
+  "image": [
+    "https://nicestaymanager.com/images/og-image.jpg"
+  ],
+  "@id": "https://nicestaymanager.com",
+  "url": "https://nicestaymanager.com",
+  "telephone": "+33664845740",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nice",
+    "addressRegion": "Alpes-Maritimes",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.7102,
+    "longitude": 7.2620
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.airbnb.fr/users/show/566722186"
+  ]
+};
+
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer comprehensive property management services including guest communication, cleaning, maintenance, revenue optimization, and Airbnb co-hosting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are you located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We are based in Nice, France, and manage properties throughout the French Riviera area."
+      }
+    }
+  ]
+};
 ---
 
 <!-- Primary Meta Tags -->
 <title>{title} | {siteName}</title>
 <meta name="title" content={`${title} | ${siteName}`} />
-<meta name="description" content={description} />
+<meta name="description" content={description || siteDescription} />
+<meta name="keywords" content={siteKeywords} />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="generator" content={Astro.generator} />
+<meta name="robots" content="index, follow" />
 
 <!-- Language Alternates -->
 <link rel="alternate" hreflang="fr" href={Astro.site ? new URL(Astro.url.pathname.replace(/^\/(en|zh|it)/, ''), Astro.site) : '/'} />
 <link rel="alternate" hreflang="en" href={Astro.site ? new URL('/en' + Astro.url.pathname.replace(/^\/(en|zh|it)/, ''), Astro.site) : '/en'} />
 <link rel="alternate" hreflang="zh" href={Astro.site ? new URL('/zh' + Astro.url.pathname.replace(/^\/(en|zh|it)/, ''), Astro.site) : '/zh'} />
 <link rel="alternate" hreflang="it" href={Astro.site ? new URL('/it' + Astro.url.pathname.replace(/^\/(en|zh|it)/, ''), Astro.site) : '/it'} />
+<link rel="alternate" hreflang="x-default" href={Astro.site ? new URL('/', Astro.site) : '/'} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -39,22 +127,38 @@ const twitterHandle = '@nicestaymanager';
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={`${title} | ${siteName}`} />
-<meta property="og:description" content={description} />
+<meta property="og:description" content={description || siteDescription} />
 <meta property="og:image" content={new URL(image, canonicalURL)} />
-<meta property="og:locale" content={lang} />
+<meta property="og:locale" content={siteLocale} />
 <meta property="og:site_name" content={siteName} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={`${title} | ${siteName}`} />
-<meta property="twitter:description" content={description} />
+<meta property="twitter:description" content={description || siteDescription} />
 <meta property="twitter:image" content={new URL(image, canonicalURL)} />
 <meta name="twitter:site" content={twitterHandle} />
+<meta name="twitter:creator" content={twitterHandle} />
 
 <!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
 <!-- Additional Meta Tags -->
 <meta name="format-detection" content="telephone=no" />
 <meta name="theme-color" content="#0284c7" />
+<meta name="author" content="Nice Stay Manager" />
+<meta name="geo.region" content="FR-PAC" />
+<meta name="geo.placename" content="Nice" />
+<meta name="geo.position" content="43.7102;7.2620" />
+<meta name="ICBM" content="43.7102, 7.2620" />
+
+<!-- Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+{Astro.url.pathname.includes('faq') && 
+  <script type="application/ld+json" set:html={JSON.stringify(faqStructuredData)} />
+}
