@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://nicestaypro.com',
+  site: 'https://www.nicestaymanager.com',
   integrations: [
     tailwind(),
     sitemap({
